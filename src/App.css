@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif; 
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition: all 0.5s cubic-bezier( 0.79, 0.33, 0.14, 0.53 );
+  }
+  
+  .clock-tick {
+   @apply relative pl-[20px] ml-4 xlg:ml-10 xl:ml-[17px] pb-[8.5px] leading-6
+  }
+  
+  .clock-tick::before {
+    content: '';
+    @apply absolute xl:left-0 top-0 w-[10px] h-[2px] bg-gray-100 xl:bg-[rgb(36,30,14)]
+  }
+  /* .clock-tickwhite {
+   @apply relative  ml-[15px] leading-6
+    
+  } */
+  .clock-tickwhite::before {
+    content: '';
+    /* @apply absolute left-5 xl:left-0 top-0 w-[15px] h-[2px] bg-[rgb(118,117,117)] */
+
+    
+  }
